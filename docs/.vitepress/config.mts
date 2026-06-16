@@ -55,6 +55,7 @@ export default defineConfig({
             { text: 'KV Cache 压缩', link: '/architecture/concept-kv-cache-compression' },
             { text: 'KV Cache 量化', link: '/architecture/concept-kv-cache-quantization' },
             { text: '推测解码', link: '/architecture/concept-speculative-decoding' },
+            { text: 'DFlash V2', link: '/architecture/concept-dflash-v2' },
             { text: 'TTFT 优化', link: '/architecture/concept-ttft-optimization' },
             { text: '显存计算', link: '/architecture/concept-vram-calculation' },
           ]

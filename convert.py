@@ -33,7 +33,7 @@ DOMAIN_MAP = {
         "concept-fp8-mixed-precision", "concept-attention-optimization",
         "concept-kv-cache", "concept-kv-cache-compression",
         "concept-kv-cache-quantization", "concept-speculative-decoding",
-        "concept-ttft-optimization", "concept-vram-calculation",
+        "concept-dflash-v2", "concept-ttft-optimization", "concept-vram-calculation",
     ],
     # training-optimization: 微调, 量化, 剪枝, 蒸馏, RLHF, WebRL
     "training-optimization": [

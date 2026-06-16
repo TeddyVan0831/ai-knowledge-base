@@ -37,6 +37,14 @@ outline: deep
 | [concept-ttft-optimization](./concept-ttft-optimization) | TTFT 优化（首 Token 延迟） | 预填充阶段占 90%+，并行化与算子融合优化 |
 | [concept-mtp-multi-token-prediction](./concept-mtp-multi-token-prediction) | MTP：多 Token 预测 | 训练时辅助预测模块，推理时丢弃 |
 
+## 推测解码与加速
+
+| 文件 | 标题 | 摘要 |
+|------|------|------|
+| [concept-speculative-decoding](./concept-speculative-decoding) | 推测解码 | 小模型草稿 + 大模型验证，加速自回归推理 |
+| [concept-dflash-v2](./concept-dflash-v2) | DFlash V2：下一代推测解码 | 块扩散 + KV 注入，4.3× 吞吐，ICML 2026 |
+| [concept-ttft-optimization](./concept-ttft-optimization) | TTFT 优化 | 首 Token 延迟优化策略 |
+
 ## 精度与显存
 
 | 文件 | 标题 | 摘要 |

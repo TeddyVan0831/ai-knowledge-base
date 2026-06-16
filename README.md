@@ -1,6 +1,8 @@
 # AI 知识库
 
 > 从基础理论到行业应用的完整 AI 知识图谱 —— 113 个核心概念，9 大主题域，用 Markdown 写作，自动构建为在线网站。
+> 
+> 2026.6.15 updated
 
 **在线阅读**：[https://teddyvan0831.github.io/ai-knowledge-base/](https://teddyvan0831.github.io/ai-knowledge-base/)
 

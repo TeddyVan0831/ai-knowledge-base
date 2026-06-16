@@ -64,9 +64,9 @@ T_spec = γ·τ_q + τ_p（γ 次草稿推理 + 1 次目标模型验证）
 
 ## 关联
 
-- 相关概念: [Deep Agent](/agent/concept-deep-agent), [AI 服务高并发原理与性能监控调优](/inference-deploy/concept-high-concurrency-ai), [KV Cache](/architecture/concept-kv-cache)
+- 相关概念: [Deep Agent](/agent/concept-deep-agent), [AI 服务高并发原理与性能监控调优](/inference-deploy/concept-high-concurrency-ai), [KV Cache](/architecture/concept-kv-cache), [DFlash V2：下一代推测解码](/architecture/concept-dflash-v2), [MTP：多 Token 预测（Multi-Token Prediction）](/architecture/concept-mtp-multi-token-prediction)
 - 相关实体: [vLLM](/inference-deploy/product-vllm), [SGLang](/inference-deploy/product-sglang)
-- 参见: [AI 部署与运维主题综述](/inference-deploy/topic-ai-deployment-ops)
+- 参见: [AI 部署与运维主题综述](/inference-deploy/topic-ai-deployment-ops), [模型优化](/training-optimization/topic-model-optimization)
 
 ## 引用来源
 
