@@ -164,6 +164,7 @@ export default defineConfig({
             { text: 'NVIDIA 软件生态', link: '/tools-ecosystem/concept-nvidia-software-ecosystem' },
             { text: 'NVIDIA 五大壁垒', link: '/tools-ecosystem/concept-nvidia-five-barriers' },
             { text: 'ASML EUV 光刻', link: '/tools-ecosystem/concept-asml-euv-lithography' },
+            { text: 'AI API 协议', link: '/tools-ecosystem/concept-ai-api-protocols' },
             { text: 'AI 经典论文', link: '/tools-ecosystem/topic-ai-classic-papers' },
           ]
         }

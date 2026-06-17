@@ -92,6 +92,7 @@ DOMAIN_MAP = {
     "tools-ecosystem": [
         "concept-cuda-parallel-computing", "concept-nvidia-software-ecosystem",
         "concept-nvidia-five-barriers", "concept-asml-euv-lithography",
+        "concept-ai-api-protocols",
     ],
 }
 

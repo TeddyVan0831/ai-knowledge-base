@@ -125,7 +125,7 @@ Tavily 提供两大核心工具 ：
 - `include_images`：是否同时提取图片链接
 
 ## 关联
-- 相关概念: [Function Calling — 模型的"手指"](/agent/concept-function-calling)、[Agent 自主规划 — 五大架构模式](/agent/concept-agent-planning)、[工具使用（Tool Use / Function Calling）](/agent/concept-tool-use)、[智能体间通信（A2A Communication）](/agent/concept-a2a-communication)、[Agent 互操作性（A2A）](/agent/concept-agent-interoperability)（Agent 互操作性与 A2A 协议）
+- 相关概念: [Function Calling — 模型的"手指"](/agent/concept-function-calling)、[Agent 自主规划 — 五大架构模式](/agent/concept-agent-planning)、[工具使用（Tool Use / Function Calling）](/agent/concept-tool-use)、[智能体间通信（A2A Communication）](/agent/concept-a2a-communication)、[Agent 互操作性（A2A）](/agent/concept-agent-interoperability)（Agent 互操作性与 A2A 协议）、[AI API 端点协议](/tools-ecosystem/concept-ai-api-protocols)
 - 参见: [Agent 开发全览 — 从原理到实践](/agent/topic-agent-development)、[AI 经典论文汇览](/tools-ecosystem/topic-ai-classic-papers)
 
 ## 引用来源
