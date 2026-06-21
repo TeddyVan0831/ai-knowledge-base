@@ -25,6 +25,8 @@ DOMAIN_MAP = {
         "concept-bayesian-reasoning", "concept-llm-wiki",
         "model-h100", "model-b200", "model-rtx4090",
         "model-qwen3-embedding", "model-jina-embedding", "model-bge-m3",
+        "company-deepseek", "company-openai", "company-anthropic",
+        "company-google", "company-meta",
     ],
     # architecture: MoE, 注意力优化, KV Cache, 解码加速
     "architecture": [
@@ -105,6 +107,7 @@ TOPIC_DOMAIN_MAP = {
     "topic-ai-deployment-ops": "inference-deploy",
     "topic-edge-inference": "inference-deploy",
     "topic-ai-classic-papers": "tools-ecosystem",
+    "topic-ai-industry-applications": "industry-cases",
 }
 
 # Build reverse map: page_name → domain

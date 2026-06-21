@@ -73,7 +73,7 @@ Sora = DiT 的工程化规模化。关键步骤 ：
 
 ## 关联
 
-- 相关概念: [图像生成技术](/multimodal/concept-image-generation), [多模态 Transformer](/multimodal/concept-multimodal-transformer), [多模态前沿：Agent 构建与视频 AIGC](/multimodal/concept-multimodal-edge), [视觉识别技术](/multimodal/concept-vision-recognition)
+- 相关概念: [图像生成技术](/multimodal/concept-image-generation), [多模态 Transformer](/multimodal/concept-multimodal-transformer), [多模态前沿：Agent 构建与视频 AIGC](/multimodal/concept-multimodal-edge), [视觉识别技术](/multimodal/concept-vision-recognition), [AI 视频生成工作流](/multimodal/concept-ai-video-workflow)
 - 参见: [模型优化](/training-optimization/topic-model-optimization)
 
 ## 引用来源

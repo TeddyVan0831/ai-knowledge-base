@@ -113,7 +113,7 @@ GGUF 是 llama.cpp 最核心的创新之一，经历了四代演进：GGML → G
 
 ## 关联
 
-- 相关概念: [后训练量化（PTQ）](/training-optimization/concept-quantization-ptq), [KV Cache](/architecture/concept-kv-cache), [企业级 AI 部署：硬件选型与框架选择](/inference-deploy/concept-enterprise-ai-deployment)
+- 相关概念: [后训练量化（PTQ）](/training-optimization/concept-quantization-ptq), [KV Cache](/architecture/concept-kv-cache), [企业级 AI 部署：硬件选型与框架选择](/inference-deploy/concept-enterprise-ai-deployment), [显存计算方法论：推理 vs 训练](/architecture/concept-vram-calculation)
 - 参见: [边缘推理框架全景](/inference-deploy/topic-edge-inference), [模型优化](/training-optimization/topic-model-optimization)
 
 ## 引用来源

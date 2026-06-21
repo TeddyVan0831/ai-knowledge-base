@@ -45,7 +45,7 @@ outline: deep
 
 ## 关联
 
-- 相关概念: [多模态 Transformer](/multimodal/concept-multimodal-transformer), [多模态前沿：Agent 构建与视频 AIGC](/multimodal/concept-multimodal-edge), [视觉识别技术](/multimodal/concept-vision-recognition), [视频生成模型](/multimodal/concept-video-generation), [数字人核心技术与应用](/multimodal/concept-digital-human)
+- 相关概念: [多模态 Transformer](/multimodal/concept-multimodal-transformer), [多模态前沿：Agent 构建与视频 AIGC](/multimodal/concept-multimodal-edge), [视觉识别技术](/multimodal/concept-vision-recognition), [视频生成模型](/multimodal/concept-video-generation), [数字人核心技术与应用](/multimodal/concept-digital-human), [AI 视频生成工作流](/multimodal/concept-ai-video-workflow)
 - 参见: [模型优化](/training-optimization/topic-model-optimization)
 
 ## 引用来源

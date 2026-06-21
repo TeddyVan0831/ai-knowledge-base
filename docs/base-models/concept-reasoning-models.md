@@ -37,7 +37,7 @@ outline: deep
 
 ## 关联
 
-- 相关概念: [大语言模型发展简史](/base-models/concept-llm-history), [RLHF（基于人类反馈的强化学习）](/training-optimization/concept-rlhf), [贝叶斯推理](/base-models/concept-bayesian-reasoning)
+- 相关概念: [大语言模型发展简史](/base-models/concept-llm-history), [RLHF（基于人类反馈的强化学习）](/training-optimization/concept-rlhf), [贝叶斯推理](/base-models/concept-bayesian-reasoning), [推理技术（Reasoning Techniques）](/base-models/concept-reasoning-techniques)
 - 参见: [模型优化](/training-optimization/topic-model-optimization)
 
 ## 引用来源

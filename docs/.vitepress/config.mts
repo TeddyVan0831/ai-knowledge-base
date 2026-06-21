@@ -39,6 +39,8 @@ export default defineConfig({
             { text: 'Embedding 模型选型', link: '/base-models/concept-embedding-model-selection' },
             { text: 'H100 GPU', link: '/base-models/model-h100' },
             { text: 'B200 GPU', link: '/base-models/model-b200' },
+            { text: 'DeepSeek 公司', link: '/base-models/company-deepseek' },
+            { text: 'OpenAI 公司', link: '/base-models/company-openai' },
           ]
         }
       ],
@@ -152,6 +154,7 @@ export default defineConfig({
             { text: '财务表格识别', link: '/industry-cases/concept-ai-table-recognition-evaluation' },
             { text: '直播 AI 助手', link: '/industry-cases/concept-live-streaming-ai-assistant' },
             { text: '培训对练智能体', link: '/industry-cases/concept-ai-training-agent' },
+            { text: '案例全景速览', link: '/industry-cases/topic-ai-industry-applications' },
           ]
         }
       ],

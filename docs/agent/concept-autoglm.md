@@ -105,7 +105,7 @@ AutoGLM 全部基于现有语言模型（无新模型结构），核心创新在
 
 ## 关联
 
-- 相关概念: [WebRL：网页强化学习框架](/training-optimization/concept-webrl), [ORM：结果监督奖励模型](/training-optimization/concept-orm-reward-model), [Agent：从可控性到自主反思](/agent/concept-agent-controllability), [Agent 五级分类体系](/agent/concept-agent-taxonomy)
+- 相关概念: [WebRL：网页强化学习框架](/training-optimization/concept-webrl), [ORM：结果监督奖励模型](/training-optimization/concept-orm-reward-model), [Agent：从可控性到自主反思](/agent/concept-agent-controllability), [Agent 五级分类体系](/agent/concept-agent-taxonomy), [直播间 AI 评论互动助手](/industry-cases/concept-live-streaming-ai-assistant)
 - 相关概念: [RLHF（基于人类反馈的强化学习）](/training-optimization/concept-rlhf), [MCP（Model Context Protocol）— 模型上下文协议](/agent/concept-mcp), [Agent 质量评估](/agent/concept-agent-evaluation)
 - 参见: [Agent 开发全览 — 从原理到实践](/agent/topic-agent-development)
 

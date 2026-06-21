@@ -164,6 +164,7 @@ outline: deep
 - 相关概念: [AI 服务高并发原理与性能监控调优](/inference-deploy/concept-high-concurrency-ai) — AI 服务高并发原理与性能监控调优
 - 相关概念: [SGLang 深度优化：Radix 缓存与极致吞吐](/inference-deploy/concept-sglang-optimization) — SGLang 深度优化：Radix 缓存与极致吞吐
 - 相关概念: [llama.cpp 边缘推理框架](/inference-deploy/concept-llamacpp) — llama.cpp 边缘推理框架
+- 相关概念: [NVIDIA 软件生态栈：cuBLAS / cuDNN / NCCL / TensorRT / NVLink](/tools-ecosystem/concept-nvidia-software-ecosystem), [CUDA：并行计算平台](/tools-ecosystem/concept-cuda-parallel-computing)
 - 参见: [AI 部署与运维主题综述](/inference-deploy/topic-ai-deployment-ops) — AI 部署与运维主题综述
 - 参见: [边缘推理框架全景](/inference-deploy/topic-edge-inference) — 边缘推理框架全景
 

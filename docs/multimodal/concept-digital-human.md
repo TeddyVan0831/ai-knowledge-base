@@ -84,7 +84,7 @@ outline: deep
 
 ## 关联
 
-- 相关概念: [图像生成技术](/multimodal/concept-image-generation), [视频生成模型](/multimodal/concept-video-generation), [多模态 Transformer](/multimodal/concept-multimodal-transformer), [AI 教育产品案例](/industry-cases/concept-ai-education-cases)
+- 相关概念: [图像生成技术](/multimodal/concept-image-generation), [视频生成模型](/multimodal/concept-video-generation), [多模态 Transformer](/multimodal/concept-multimodal-transformer), [AI 教育产品案例](/industry-cases/concept-ai-education-cases), [AI 视频生成工作流](/multimodal/concept-ai-video-workflow)
 - 相关概念: [AI 表格数据识别与模型评测方法论](/industry-cases/concept-ai-table-recognition-evaluation)
 - 参见: [Agent 开发全览 — 从原理到实践](/agent/topic-agent-development)
 
