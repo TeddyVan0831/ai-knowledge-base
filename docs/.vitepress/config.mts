@@ -94,6 +94,7 @@ export default defineConfig({
             { text: 'vLLM', link: '/inference-deploy/product-vllm' },
             { text: 'LangChain', link: '/inference-deploy/product-langchain' },
             { text: '边缘推理全景', link: '/inference-deploy/topic-edge-inference' },
+            { text: 'LLM 边缘推理综述', link: '/inference-deploy/concept-llm-edge-inference' },
             { text: '部署运维综述', link: '/inference-deploy/topic-ai-deployment-ops' },
           ]
         }

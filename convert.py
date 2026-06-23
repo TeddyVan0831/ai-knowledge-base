@@ -52,6 +52,7 @@ DOMAIN_MAP = {
         "concept-mediapipe-llm", "concept-mnn",
         "product-vllm", "product-sglang", "product-langchain",
         "product-openclaw", "product-hermes", "product-faiss",
+        "concept-llm-edge-inference",
     ],
     # agent: Agent 设计模式, 评估, MCP, AutoGLM, 安全
     "agent": [

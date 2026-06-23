@@ -110,7 +110,7 @@ outline: deep
 
 ## 关联
 
-- 相关概念: [llama.cpp 边缘推理框架](/inference-deploy/concept-llamacpp), [MediaPipe LLM 推理框架](/inference-deploy/concept-mediapipe-llm), [MNN 边缘推理框架](/inference-deploy/concept-mnn)
+- 相关概念: [llama.cpp 边缘推理框架](/inference-deploy/concept-llamacpp), [MediaPipe LLM 推理框架](/inference-deploy/concept-mediapipe-llm), [MNN 边缘推理框架](/inference-deploy/concept-mnn), [LLM 边缘推理综述](/inference-deploy/concept-llm-edge-inference)
 - 相关概念: [后训练量化（PTQ）](/training-optimization/concept-quantization-ptq), [企业级 AI 部署：硬件选型与框架选择](/inference-deploy/concept-enterprise-ai-deployment)
 - 参见: [模型优化](/training-optimization/topic-model-optimization), [AI 部署与运维主题综述](/inference-deploy/topic-ai-deployment-ops)
 
