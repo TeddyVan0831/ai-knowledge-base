@@ -5,10 +5,14 @@ outline: deep
 
 # MCP（Model Context Protocol）— 模型上下文协议
 
+> **创建时间**: 2026-05-26
+> **最后更新**: 2026-06-10
+> **来源**: , 
 > **类型**: concept
 > **创建时间**: 2026-05-26
 > **最后更新**: 2026-06-10
 > **来源**: , 
+> **领域**: ai
 
 ## 摘要
 
@@ -134,4 +138,4 @@ Tavily 提供两大核心工具 ：
 
 ## 变更记录
 - 2026-05-26: 初始创建，来源 
-- 2026-06-10: 合并 [MCP 协议（已合并）](/base-models/concept-mcp-protocol) 的 N×M 集成、JSON-RPC 通信、工具设计最佳实践、战略风险分析等深度内容，来源 
+- 2026-06-10: 合并 [concept-mcp-protocol](/base-models/concept-mcp-protocol) 的 N×M 集成、JSON-RPC 通信、工具设计最佳实践、战略风险分析等深度内容，来源 

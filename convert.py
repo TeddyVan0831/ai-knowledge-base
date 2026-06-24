@@ -1,7 +1,7 @@
 """
-AI 知识库转换脚本
-将 Obsidian LLM Wiki (wikilink 语法) 转换为 VitePress 友好格式
-按技术领域重组 115 个页面到 9 个主题域
+AI 知识库 → VitePress 转换脚本 (v2.0)
+适配统一知识库架构：从多域 wiki 中仅提取 domain:ai 的页面
+按技术领域重组到 9 个主题域
 """
 import os
 import re
@@ -10,10 +10,11 @@ from pathlib import Path
 from collections import defaultdict
 
 # ============ 配置 ============
-WIKI_ROOT = r"C:\Users\vanem\OneDrive\应用\remotely-save\Obsidian LLM WIKI Vault\AI 知识库"
+WIKI_ROOT = r"C:\Users\vanem\OneDrive\应用\remotely-save\Obsidian LLM WIKI Vault\统一知识库"
 TARGET_ROOT = r"D:\TeddyWorkshop\WorkBuddy\ai-knowledge-base\docs"
+TARGET_DOMAIN = "ai"  # 只发布 AI 域
 
-# ============ 领域映射表 ============
+# ============ 领域映射表（AI 域内 9 个子域） ============
 DOMAIN_MAP = {
     # base-models: Transformer, Embedding, 训练范式, LLM 演进, 推理模型, GPU硬件, 嵌入模型实体
     "base-models": [
@@ -120,6 +121,23 @@ for topic, domain in TOPIC_DOMAIN_MAP.items():
     PAGE_DOMAIN[topic] = domain
 
 
+# ============ v2.0 新增：域过滤 ============
+def read_page_domain(md_path):
+    """从页面内容中提取 `> **领域**: xxx` 标签"""
+    try:
+        with open(md_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                m = re.match(r'>\s*\*\*领域\*\*\s*:\s*(\S+)', line)
+                if m:
+                    return m.group(1).strip()
+    except:
+        pass
+    return None
+
+
+# ============ 原有函数（微调） ============
+
 def get_clean_name(filename):
     """Extract kebab-case name without .md"""
     return Path(filename).stem
@@ -157,7 +175,7 @@ def get_page_metadata(md_path):
 
 
 def load_all_titles(wiki_root):
-    """Build a mapping of page_name → page_title"""
+    """Build a mapping of page_name → page_title (only AI domain pages)"""
     titles = {}
     concepts_dir = os.path.join(wiki_root, "wiki", "concepts")
     entities_dir = os.path.join(wiki_root, "wiki", "entities")
@@ -170,7 +188,14 @@ def load_all_titles(wiki_root):
             if not f.endswith('.md'):
                 continue
             name = get_clean_name(f)
-            title = get_page_title(os.path.join(d, f))
+            fpath = os.path.join(d, f)
+            
+            # v2.0: only load AI domain pages into title index
+            page_domain = read_page_domain(fpath)
+            if page_domain != TARGET_DOMAIN:
+                continue
+            
+            title = get_page_title(fpath)
             if title:
                 titles[name] = title
     return titles
@@ -185,15 +210,9 @@ def convert_wikilinks(content, titles, page_domain, source_name):
         target = parts[0].strip()
         display = parts[1].strip() if len(parts) > 1 else None
         
-        # Determine target filename and path
-        # Pattern: wiki/concepts/xxx → concept-xxx
-        # Pattern: wiki/entities/xxx → xxx
-        # Pattern: wiki/topics/xxx → topic-xxx
-        # Pattern: raw/xxx.md → keep as raw reference (remove or footnote)
-        
         if target.startswith('raw/'):
-            # Raw references become simple footnotes
-            return ''  # Remove raw file links
+            # Raw references become simple footnotes - remove from output
+            return ''
         
         # Extract page name
         if '/' in target:
@@ -206,19 +225,13 @@ def convert_wikilinks(content, titles, page_domain, source_name):
         if page_name in ['index']:
             return ''
         
-        # Determine which domain this page is in
         domain = page_domain.get(page_name, 'base-models')
-        
-        # Build link
         link_display = display if display else titles.get(page_name, page_name)
         link_path = f"/{domain}/{page_name}"
         
         return f"[{link_display}]({link_path})"
     
-    # Pattern: [[wiki/...]] or [[raw/...]]
     content = re.sub(r'\[\[(wiki/[^\]]+|raw/[^\]]+)\]\]', replace_wikilink, content)
-    
-    # Also handle bare [[concept-xxx]] patterns (without wiki/ prefix)
     content = re.sub(r'\[\[(concept-[^\]]+|topic-[^\]]+|model-[^\]]+|product-[^\]]+)\]\]', replace_wikilink, content)
     
     return content
@@ -231,10 +244,8 @@ def clean_content_for_vitepress(content):
     in_frontmatter = False
     frontmatter_end = False
     skip_block = False
-    metadata_block = False
     
     for line in lines:
-        # Skip YAML frontmatter (--- to ---)
         if line.strip() == '---' and not frontmatter_end:
             if not in_frontmatter:
                 in_frontmatter = True
@@ -249,8 +260,8 @@ def clean_content_for_vitepress(content):
         if skip_block:
             continue
         
-        # Keep metadata block (> **类型**: ...) as a comment-style note
-        if line.startswith('> **类型**') or line.startswith('> **创建时间**') or line.startswith('> **最后更新**') or line.startswith('> **来源**'):
+        # Keep metadata lines
+        if line.startswith('> **') or line.startswith('> **领域**'):
             result.append(line)
             continue
         
@@ -275,37 +286,52 @@ def convert_page(src_path, dst_path, titles, page_domain, domain, source_name):
     with open(src_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # Clean Obsidian formatting
     content = clean_content_for_vitepress(content)
-    
-    # Convert wikilinks
     content = convert_wikilinks(content, titles, page_domain, source_name)
-    
-    # Get title
     title = get_page_title(src_path) or source_name
-    
-    # Add VitePress frontmatter
     content = add_vitepress_frontmatter(content, title, domain)
     
-    # Write
     os.makedirs(os.path.dirname(dst_path), exist_ok=True)
     with open(dst_path, 'w', encoding='utf-8') as f:
         f.write(content)
-    
     return title
 
 
+# ============ v2.0 新增：域过滤列表构建 ============
+def build_ai_page_set(wiki_root):
+    """扫描所有 wiki 页面，返回 domain:ai 的页面名集合"""
+    ai_pages = set()
+    for subdir in ["concepts", "entities", "topics"]:
+        dir_path = os.path.join(wiki_root, "wiki", subdir)
+        if not os.path.isdir(dir_path):
+            continue
+        for f in os.listdir(dir_path):
+            if not f.endswith('.md'):
+                continue
+            name = get_clean_name(f)
+            fpath = os.path.join(dir_path, f)
+            page_domain = read_page_domain(fpath)
+            if page_domain == TARGET_DOMAIN:
+                ai_pages.add(name)
+    return ai_pages
+
+
 def main():
-    print("=== AI 知识库转换脚本 ===")
+    print("=== 统一知识库 → VitePress 转换脚本 v2.0 ===")
     print(f"源: {WIKI_ROOT}")
     print(f"目标: {TARGET_ROOT}")
+    print(f"目标域: {TARGET_DOMAIN}")
     
-    # Load all page titles
+    # v2.0: Build set of AI-domain page names
+    ai_pages = build_ai_page_set(WIKI_ROOT)
+    print(f"\n🔍 扫描到 {len(ai_pages)} 个 AI 域页面")
+    
+    # Load titles (only AI domain)
     titles = load_all_titles(WIKI_ROOT)
-    print(f"\n📖 加载了 {len(titles)} 个页面标题")
+    print(f"📖 加载了 {len(titles)} 个页面标题")
     
-    # Count pages by domain
     domain_count = defaultdict(int)
+    skipped_count = 0
     
     # Convert concept pages
     concepts_dir = os.path.join(WIKI_ROOT, "wiki", "concepts")
@@ -313,14 +339,19 @@ def main():
         if not f.endswith('.md'):
             continue
         name = get_clean_name(f)
+        
+        if name not in ai_pages:
+            skipped_count += 1
+            continue
+        
         if name == 'concept-mcp-protocol':
-            continue  # Skip merged page
+            continue
         
         domain = PAGE_DOMAIN.get(name, 'base-models')
         src = os.path.join(concepts_dir, f)
         dst = os.path.join(TARGET_ROOT, domain, f"concept-{name.replace('concept-', '')}.md")
         
-        title = convert_page(src, dst, titles, PAGE_DOMAIN, domain, name)
+        convert_page(src, dst, titles, PAGE_DOMAIN, domain, name)
         domain_count[domain] += 1
         print(f"  ✅ {domain:25s} ← {name}")
     
@@ -330,14 +361,19 @@ def main():
         if not f.endswith('.md'):
             continue
         name = get_clean_name(f)
+        
+        if name not in ai_pages:
+            skipped_count += 1
+            continue
+        
         if name == 'model-qwen3':
-            continue  # Skip merged page
+            continue
         
         domain = PAGE_DOMAIN.get(name, 'base-models')
         src = os.path.join(entities_dir, f)
         dst = os.path.join(TARGET_ROOT, domain, f"{name}.md")
         
-        title = convert_page(src, dst, titles, PAGE_DOMAIN, domain, name)
+        convert_page(src, dst, titles, PAGE_DOMAIN, domain, name)
         domain_count[domain] += 1
         print(f"  ✅ {domain:25s} ← {name}")
     
@@ -348,11 +384,15 @@ def main():
             continue
         name = get_clean_name(f)
         
+        if name not in ai_pages:
+            skipped_count += 1
+            continue
+        
         domain = TOPIC_DOMAIN_MAP.get(name, 'base-models')
         src = os.path.join(topics_dir, f)
         dst = os.path.join(TARGET_ROOT, domain, f"{name}.md")
         
-        title = convert_page(src, dst, titles, PAGE_DOMAIN, domain, name)
+        convert_page(src, dst, titles, PAGE_DOMAIN, domain, name)
         domain_count[domain] += 1
         print(f"  ✅ {domain:25s} ← {name} (topic)")
     
@@ -361,6 +401,8 @@ def main():
     for d in sorted(domain_count.keys()):
         print(f"  {d}: {domain_count[d]} 页")
     print(f"  合计: {total} 页")
+    if skipped_count > 0:
+        print(f"  跳过 (非 AI 域): {skipped_count} 页")
     print("\n✅ 转换完成!")
 
 

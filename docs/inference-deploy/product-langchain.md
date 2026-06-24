@@ -5,10 +5,14 @@ outline: deep
 
 # LangChain
 
+> **创建时间**: 2026-05-26
+> **最后更新**: 2026-05-26
+> **来源**: , 
 > **类型**: entity
 > **创建时间**: 2026-05-26
 > **最后更新**: 2026-05-26
 > **来源**: , 
+> **领域**: ai
 
 ## 摘要
 LangChain 是全能型 LLM 应用开发框架，提供六大核心组件（Models、Prompts、Memory、Indexes、Chains、Agents），支持 LCEL 管道语法、Agent 工具链与 ReAct 模式，用于多任务应用开发。

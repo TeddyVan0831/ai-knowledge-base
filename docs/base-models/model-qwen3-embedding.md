@@ -5,10 +5,14 @@ outline: deep
 
 # Qwen3-Embedding 系列
 
+> **创建时间**: 2026-05-26
+> **最后更新**: 2026-05-26
+> **来源**: 
 > **类型**: entity
 > **创建时间**: 2026-05-26
 > **最后更新**: 2026-05-26
 > **来源**: 
+> **领域**: ai
 
 ## 摘要
 
@@ -55,5 +59,5 @@ MTEB (Massive Text Embedding Benchmark) 涵盖 **8 大类任务**和 **58 个数
 ## 变更记录
 
 - 2026-05-26: 初始创建，来源 
-- 2026-06-10: 合并 [Qwen3 Embedding 系列（已合并）](/base-models/model-qwen3) 的 MTEB 基准背景信息，统一 Qwen3-Embedding 页面
+- 2026-06-10: 合并 [model-qwen3](/base-models/model-qwen3) 的 MTEB 基准背景信息，统一 Qwen3-Embedding 页面
 - 2026-06-21: 竞品更新——截至 2026-04，NVIDIA NV-Embed-v2（72.31 英文 MTEB）和 BGE-en-ICL（71.24）已进入前列；Qwen3 自身 70.58 仍为开源标杆，新兴维度压缩（Matryoshka 32-4096 维）成为标配能力
