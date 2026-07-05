@@ -46,7 +46,8 @@ Session 是 Agent 与用户之间一次完整交互的有状态容器：
 ## 关联
 
 - 相关概念: [智能体记忆管理（Agent Memory Management）](/agent/concept-agent-memory), [Agent 五级分类体系](/agent/concept-agent-taxonomy), [KV Cache](/architecture/concept-kv-cache)
-- 参见: [Agent 开发全览 — 从原理到实践](/agent/topic-agent-development)
+- **Harness Engineering 视角（2026-07 新增）**: [Harness Engineering（harness 工程）](/base-models/concept-harness-engineering)（Context Engineering 是 L1 指导与上下文层，不能独立保障 Agent 任务）、[Harness 四问法（边界判断工具）](/base-models/concept-harness-four-questions)（T3 任务感知上下文是四问法关键）
+- 参见: [Agent 开发全览 — 从原理到实践](/agent/topic-agent-development), [Agent Harness 工程综述（2026）](/base-models/topic-harness-engineering-2026)
 
 ## 引用来源
 

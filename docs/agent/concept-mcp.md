@@ -130,7 +130,8 @@ Tavily 提供两大核心工具 ：
 
 ## 关联
 - 相关概念: [Function Calling — 模型的"手指"](/agent/concept-function-calling)、[Agent 自主规划 — 五大架构模式](/agent/concept-agent-planning)、[工具使用（Tool Use / Function Calling）](/agent/concept-tool-use)、[智能体间通信（A2A Communication）](/agent/concept-a2a-communication)、[Agent 互操作性（A2A）](/agent/concept-agent-interoperability)（Agent 互操作性与 A2A 协议）、[AI API 端点协议](/tools-ecosystem/concept-ai-api-protocols)
-- 参见: [Agent 开发全览 — 从原理到实践](/agent/topic-agent-development)、[AI 经典论文汇览](/tools-ecosystem/topic-ai-classic-papers)
+- **Harness Engineering 视角（2026-07 新增）**: [Harness Engineering（harness 工程）](/base-models/concept-harness-engineering)（MCP 是 L2 行动与环境层组件，单 MCP Server 不构成完整 Harness）、[Harness 四问法（边界判断工具）](/base-models/concept-harness-four-questions)（MCP 仅满足 T2）
+- 参见: [Agent 开发全览 — 从原理到实践](/agent/topic-agent-development)、[AI 经典论文汇览](/tools-ecosystem/topic-ai-classic-papers)、[Agent Harness 工程综述（2026）](/base-models/topic-harness-engineering-2026)
 
 ## 引用来源
 - [1]  — MCP 定义、架构、三大核心能力、高德/Tavily 实战案例、与 Function Calling/Skill 的关系
@@ -138,4 +139,4 @@ Tavily 提供两大核心工具 ：
 
 ## 变更记录
 - 2026-05-26: 初始创建，来源 
-- 2026-06-10: 合并 [concept-mcp-protocol](/base-models/concept-mcp-protocol) 的 N×M 集成、JSON-RPC 通信、工具设计最佳实践、战略风险分析等深度内容，来源 
+- 2026-06-10: 合并 [MCP 协议（已合并）](/base-models/concept-mcp-protocol) 的 N×M 集成、JSON-RPC 通信、工具设计最佳实践、战略风险分析等深度内容，来源 

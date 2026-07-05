@@ -45,6 +45,8 @@ outline: deep
 
 ## 关联
 
+- 产品战略域入口: [product-strategy-home](/base-models/product-strategy-home)
+- 金融域入口: [finance-home](/base-models/finance-home)
 - 跨域连接: [cross-domain-connections](/base-models/cross-domain-connections)
 - 产品战略交集: AI 产品设计方法论、AI 赋能的产品决策
 - 金融交集: FinTech 技术栈、LLM 在量化中的应用
