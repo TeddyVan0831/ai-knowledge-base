@@ -25,9 +25,9 @@ outline: deep
 
 | 概念 | 页面 |
 |------|------|
-| Harness Engineering 核心定义、五种分析单位、三层口径、四问法、厚度矩阵 | [Harness Engineering（harness 工程）](/base-models/concept-harness-engineering) |
-| Agent 任务生命周期 8 阶段、6 大问题、6 大系统模块 | [Agent 任务生命周期](/base-models/concept-agent-task-lifecycle) |
-| L0-L5 覆盖层次（从模型到组织） | [Harness 覆盖层次（L0–L5）](/base-models/concept-harness-coverage-levels) |
+| Harness Engineering 核心定义、五种分析单位、三层口径、四问法、厚度矩阵 | [Harness Engineering（harness 工程）](/agent/concept-harness-engineering) |
+| Agent 任务生命周期 8 阶段、6 大问题、6 大系统模块 | [Agent 任务生命周期](/agent/concept-agent-task-lifecycle) |
+| L0-L5 覆盖层次（从模型到组织） | [Harness 覆盖层次（L0–L5）](/agent/concept-harness-coverage-levels) |
 | 相关 Agent 概念 | [concept-agent-loop](/base-models/concept-agent-loop), [上下文工程（Context Engineering）](/agent/concept-context-engineering), [MCP 协议（已合并）](/base-models/concept-mcp-protocol), [智能体记忆管理（Agent Memory Management）](/agent/concept-agent-memory) |
 
 ### 三、3 大工程观察
@@ -39,9 +39,9 @@ outline: deep
 | OpenAI agent-first 仓库 | OpenAI Engineering 2026 | 仓库环境本身会成为 Harness 的一部分 |
 
 详见：
-- [SWE-agent ACI 接口实验案例](/base-models/case-swe-agent-aci-experiment)
-- [Anthropic 长任务 Harness 案例（Opus 4.5）](/base-models/case-anthropic-long-running-agent)
-- [OpenAI Agent-first 仓库案例](/base-models/case-openai-agent-first-warehouse)
+- [SWE-agent ACI 接口实验案例](/agent/case-swe-agent-aci-experiment)
+- [Anthropic 长任务 Harness 案例（Opus 4.5）](/agent/case-anthropic-long-running-agent)
+- [OpenAI Agent-first 仓库案例](/agent/case-openai-agent-first-warehouse)
 
 ### 四、4 条工程结论
 
@@ -110,8 +110,8 @@ outline: deep
 
 ## 关联
 
-- 相关概念: [Harness Engineering（harness 工程）](/base-models/concept-harness-engineering), [Agent 任务生命周期](/base-models/concept-agent-task-lifecycle), [Harness 覆盖层次（L0–L5）](/base-models/concept-harness-coverage-levels)
-- 相关案例: [SWE-agent ACI 接口实验案例](/base-models/case-swe-agent-aci-experiment), [Anthropic 长任务 Harness 案例（Opus 4.5）](/base-models/case-anthropic-long-running-agent), [OpenAI Agent-first 仓库案例](/base-models/case-openai-agent-first-warehouse)
+- 相关概念: [Harness Engineering（harness 工程）](/agent/concept-harness-engineering), [Agent 任务生命周期](/agent/concept-agent-task-lifecycle), [Harness 覆盖层次（L0–L5）](/agent/concept-harness-coverage-levels)
+- 相关案例: [SWE-agent ACI 接口实验案例](/agent/case-swe-agent-aci-experiment), [Anthropic 长任务 Harness 案例（Opus 4.5）](/agent/case-anthropic-long-running-agent), [OpenAI Agent-first 仓库案例](/agent/case-openai-agent-first-warehouse)
 - 配套资料: 
 
 ## 引用来源

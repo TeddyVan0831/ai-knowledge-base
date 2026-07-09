@@ -42,16 +42,6 @@ export default defineConfig({
             { text: 'Embedding 模型选型', link: '/base-models/concept-embedding-model-selection' },
             { text: '范畴论与 LLM', link: '/base-models/concept-category-theory-llm' },
             { text: 'LLM Wiki', link: '/base-models/concept-llm-wiki' },
-            // Harness Engineering 4 件套（2026-07-05 新增）
-            { text: 'Harness Engineering 核心', link: '/base-models/concept-harness-engineering' },
-            { text: 'L0-L5 覆盖层次', link: '/base-models/concept-harness-coverage-levels' },
-            { text: '四问法边界判断', link: '/base-models/concept-harness-four-questions' },
-            { text: 'Harness Engineering 综述', link: '/base-models/topic-harness-engineering-2026' },
-            { text: 'Agent 任务生命周期', link: '/base-models/concept-agent-task-lifecycle' },
-            // 案例与实体
-            { text: 'Anthropic 长任务案例', link: '/base-models/case-anthropic-long-running-agent' },
-            { text: 'SWE-agent 实验', link: '/base-models/case-swe-agent-aci-experiment' },
-            { text: 'OpenAI Agent-first 仓库', link: '/base-models/case-openai-agent-first-warehouse' },
             // 硬件与公司
             { text: 'H100 GPU', link: '/base-models/model-h100' },
             { text: 'B200 GPU', link: '/base-models/model-b200' },
@@ -166,6 +156,15 @@ export default defineConfig({
             { text: 'Langchain Chain Types', link: '/agent/concept-langchain-chain-types' },
             { text: 'Agent 开发综述', link: '/agent/topic-agent-development' },
             { text: '设计模式综述', link: '/agent/topic-agentic-design-patterns' },
+            // Harness Engineering 工程簇 + 案例 + 生命周期（2026-07-09 重分类至 agent）
+            { text: 'Harness Engineering 核心', link: '/agent/concept-harness-engineering' },
+            { text: 'L0-L5 覆盖层次', link: '/agent/concept-harness-coverage-levels' },
+            { text: '四问法边界判断', link: '/agent/concept-harness-four-questions' },
+            { text: 'Harness Engineering 综述', link: '/agent/topic-harness-engineering-2026' },
+            { text: 'Agent 任务生命周期', link: '/agent/concept-agent-task-lifecycle' },
+            { text: 'Anthropic 长任务案例', link: '/agent/case-anthropic-long-running-agent' },
+            { text: 'SWE-agent 实验', link: '/agent/case-swe-agent-aci-experiment' },
+            { text: 'OpenAI Agent-first 仓库', link: '/agent/case-openai-agent-first-warehouse' },
           ]
         }
       ],
@@ -200,7 +199,7 @@ export default defineConfig({
             { text: 'MAE 掩码自编码器', link: '/multimodal/concept-mae-masked-autoencoder' },
             { text: 'Humans-300M 数据集', link: '/multimodal/concept-humans-300m-dataset' },
             { text: 'AI 视频工作流', link: '/multimodal/concept-ai-video-workflow' },
-            { text: 'R-CNN vs YOLO 目标检测对比', link: '/base-models/concept-comparison-rcnn-vs-yolo' },
+            { text: 'R-CNN vs YOLO 目标检测对比', link: '/multimodal/concept-comparison-rcnn-vs-yolo' },
           ]
         }
       ],

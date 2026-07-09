@@ -92,8 +92,8 @@ outline: deep
 
 ## 关联
 
-- 相关概念: [Harness Engineering（harness 工程）](/base-models/concept-harness-engineering), [Harness 覆盖层次（L0–L5）](/base-models/concept-harness-coverage-levels)
-- 主题: [Agent Harness 工程综述（2026）](/base-models/topic-harness-engineering-2026)
+- 相关概念: [Harness Engineering（harness 工程）](/agent/concept-harness-engineering), [Harness 覆盖层次（L0–L5）](/agent/concept-harness-coverage-levels)
+- 主题: [Agent Harness 工程综述（2026）](/agent/topic-harness-engineering-2026)
 - 配套资料: 
 - 学术参考: Macedo 2026 预印本 [arXiv 2606.10106](https://arxiv.org/abs/2606.10106)
 

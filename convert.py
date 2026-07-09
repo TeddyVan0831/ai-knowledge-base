@@ -14,6 +14,13 @@ WIKI_ROOT = r"C:\Users\vanem\OneDrive\应用\remotely-save\Obsidian LLM WIKI Vau
 TARGET_ROOT = r"D:\TeddyWorkshop\WorkBuddy\ai-knowledge-base\docs"
 TARGET_DOMAIN = "ai"  # 只发布 AI 域
 
+# ============ 跳过页（库内索引/已合并页，不发布到站点） ============
+SKIP_PAGES = {
+    "concept-mcp-protocol",  # 已合并到 concept-mcp
+    "model-qwen3",           # 已合并到 model-qwen3-embedding
+    "ai-home",               # 域主页（Obsidian 内部索引，非读者内容）
+}
+
 # ============ 领域映射表（AI 域内 9 个子域） ============
 DOMAIN_MAP = {
     # base-models: Transformer, Embedding, 训练范式, LLM 演进, 推理模型, GPU硬件, 嵌入模型实体
@@ -24,6 +31,7 @@ DOMAIN_MAP = {
         "concept-embedding-model-selection", "concept-in-context-learning",
         "concept-few-shot-prompting", "concept-reasoning-techniques",
         "concept-bayesian-reasoning", "concept-llm-wiki",
+        "concept-category-theory-llm",
         "model-h100", "model-b200", "model-rtx4090",
         "model-qwen3-embedding", "model-jina-embedding", "model-bge-m3",
         "company-deepseek", "company-openai", "company-anthropic",
@@ -71,6 +79,11 @@ DOMAIN_MAP = {
         "concept-agent-optimization", "concept-a2a-communication",
         "concept-deep-agent", "concept-langchain-chain-types",
         "concept-autoglm",
+        # Harness 工程簇 + Agent 案例 + 生命周期
+        "concept-harness-engineering", "concept-harness-coverage-levels",
+        "concept-harness-four-questions", "concept-agent-task-lifecycle",
+        "case-anthropic-long-running-agent", "case-openai-agent-first-warehouse",
+        "case-swe-agent-aci-experiment",
     ],
     # rag: RAG 基础, 高级检索, Agentic RAG, 分块策略
     "rag": [
@@ -85,7 +98,7 @@ DOMAIN_MAP = {
         "concept-image-generation", "concept-video-generation",
         "concept-meta-sapiens", "concept-mae-masked-autoencoder",
         "concept-humans-300m-dataset", "concept-digital-human",
-        "concept-ai-video-workflow",
+        "concept-ai-video-workflow", "comparison-rcnn-vs-yolo",
     ],
     # industry-cases: 行业应用案例
     "industry-cases": [
@@ -110,6 +123,7 @@ TOPIC_DOMAIN_MAP = {
     "topic-edge-inference": "inference-deploy",
     "topic-ai-classic-papers": "tools-ecosystem",
     "topic-ai-industry-applications": "industry-cases",
+    "topic-harness-engineering-2026": "agent",
 }
 
 # Build reverse map: page_name → domain
@@ -344,7 +358,7 @@ def main():
             skipped_count += 1
             continue
         
-        if name == 'concept-mcp-protocol':
+        if name in SKIP_PAGES:
             continue
         
         domain = PAGE_DOMAIN.get(name, 'base-models')
@@ -366,7 +380,7 @@ def main():
             skipped_count += 1
             continue
         
-        if name == 'model-qwen3':
+        if name in SKIP_PAGES:
             continue
         
         domain = PAGE_DOMAIN.get(name, 'base-models')
@@ -386,6 +400,9 @@ def main():
         
         if name not in ai_pages:
             skipped_count += 1
+            continue
+        
+        if name in SKIP_PAGES:
             continue
         
         domain = TOPIC_DOMAIN_MAP.get(name, 'base-models')
