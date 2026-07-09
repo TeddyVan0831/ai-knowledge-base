@@ -343,7 +343,20 @@ def main():
     # Load titles (only AI domain)
     titles = load_all_titles(WIKI_ROOT)
     print(f"📖 加载了 {len(titles)} 个页面标题")
-    
+
+    # ============ 未映射页自检（固化：防止新页静默落入 base-models） ============
+    mapped = set(PAGE_DOMAIN.keys())
+    unmapped = sorted(ai_pages - mapped - SKIP_PAGES)
+    if unmapped:
+        print(f"\n⚠️ 警告：发现 {len(unmapped)} 个 AI 域页面未登记进 DOMAIN_MAP，"
+              f"将被默认丢进 base-models/（分类不准）！")
+        print("   建议在 convert.py 的 DOMAIN_MAP / TOPIC_DOMAIN_MAP 中补充：")
+        for name in unmapped:
+            print(f"   • {name}  —  {titles.get(name, '(无标题)')}")
+        print("   （已合并/索引类页面可加入 SKIP_PAGES 跳过发布）")
+    else:
+        print("✅ 自检通过：所有 AI 域页面均已映射，无未分类页。")
+
     domain_count = defaultdict(int)
     skipped_count = 0
     
