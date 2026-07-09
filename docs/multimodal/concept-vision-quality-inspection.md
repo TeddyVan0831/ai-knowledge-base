@@ -130,6 +130,7 @@ ImageNet 包含超过 15 million 图像，约 22,000 类 。ILSVRC 竞赛 2010-2
 - 相关概念: [AI 服务高并发原理与性能监控调优](/inference-deploy/concept-high-concurrency-ai) — AI 服务高并发原理与性能调优
 - 参见: [AI 部署与运维主题综述](/inference-deploy/topic-ai-deployment-ops) — AI 部署与运维主题综述
 - 相关实体: [Qwen3-Embedding 系列](/base-models/model-qwen3-embedding) — Qwen-VL 视觉语言模型
+- 对比综述: [R-CNN vs YOLO：两阶段与单阶段目标检测对比](/base-models/comparison-rcnn-vs-yolo) — R-CNN（two-stage）vs YOLO（one-stage）核心对比
 
 ## 引用来源
 

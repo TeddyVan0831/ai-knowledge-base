@@ -17,6 +17,10 @@ Anthropic Engineering 2025-11-26 发表 *Effective harnesses for long-running ag
 
 ## 详情
 
+> 🖼️ [图 1] **模型应用演变** — 4 阶段从左到右：单次请求（输入→模型→文本输出）→ Function Calling（结构化行动请求）→ Agent Loop（观察→模型决策→工具行动→再次观察）→ Agent 任务（任务目标→工作空间与状态→持续行动→验证与交付）。底部："从'生成一段文字'走向'在真实环境中持续完成任务'" — 
+
+> 🖼️ [图 2] **Anthropic 改变了什么** — "他们没有重新训练模型，而是重做模型周围的任务结构和运行约束"。5 行对照表（5 个失败模式 → 5 个系统工件 → 5 个价值） + 5 个具体工件清单：`feature_list.json` / `claude-progress.txt` / `Git 历史` / `init.sh` / `Puppeteer MCP 基础端到端测试` — 
+
 ### 一、5 种稳定出现的失败模式
 
 | # | 失败模式 | 根因 |

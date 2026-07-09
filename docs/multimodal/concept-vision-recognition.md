@@ -75,6 +75,7 @@ UNet 是理解文生图、文生视频的关键前置知识——扩散模型的
 
 - 相关概念: [多模态 Transformer](/multimodal/concept-multimodal-transformer), [Transformer 架构](/base-models/concept-transformer-architecture), [大语言模型训练范式](/base-models/concept-llm-training-paradigm), [AI 教育产品案例](/industry-cases/concept-ai-education-cases)（AI 教育产品案例）
 - 参见: [模型优化](/training-optimization/topic-model-optimization)
+- 对比综述: [R-CNN vs YOLO：两阶段与单阶段目标检测对比](/base-models/comparison-rcnn-vs-yolo) — R-CNN（two-stage）vs YOLO（one-stage）核心对比
 
 ## 引用来源
 

@@ -200,6 +200,7 @@ export default defineConfig({
             { text: 'MAE 掩码自编码器', link: '/multimodal/concept-mae-masked-autoencoder' },
             { text: 'Humans-300M 数据集', link: '/multimodal/concept-humans-300m-dataset' },
             { text: 'AI 视频工作流', link: '/multimodal/concept-ai-video-workflow' },
+            { text: 'R-CNN vs YOLO 目标检测对比', link: '/base-models/concept-comparison-rcnn-vs-yolo' },
           ]
         }
       ],
