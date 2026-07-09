@@ -36,6 +36,8 @@ DOMAIN_MAP = {
         "model-qwen3-embedding", "model-jina-embedding", "model-bge-m3",
         "company-deepseek", "company-openai", "company-anthropic",
         "company-google", "company-meta",
+        "concept-deepseek-v4", "concept-ascend-ecosystem",
+        "concept-atlas-superpod", "company-huawei",
     ],
     # architecture: MoE, 注意力优化, KV Cache, 解码加速
     "architecture": [
@@ -45,6 +47,7 @@ DOMAIN_MAP = {
         "concept-kv-cache", "concept-kv-cache-compression",
         "concept-kv-cache-quantization", "concept-speculative-decoding",
         "concept-dflash-v2", "concept-ttft-optimization", "concept-vram-calculation",
+        "concept-csa-hca-attention",
     ],
     # training-optimization: 微调, 量化, 剪枝, 蒸馏, RLHF, WebRL
     "training-optimization": [
@@ -61,7 +64,7 @@ DOMAIN_MAP = {
         "concept-mediapipe-llm", "concept-mnn",
         "product-vllm", "product-sglang", "product-langchain",
         "product-openclaw", "product-hermes", "product-faiss",
-        "concept-llm-edge-inference",
+        "concept-llm-edge-inference", "concept-ascend-deployment",
     ],
     # agent: Agent 设计模式, 评估, MCP, AutoGLM, 安全
     "agent": [
@@ -84,6 +87,7 @@ DOMAIN_MAP = {
         "concept-harness-four-questions", "concept-agent-task-lifecycle",
         "case-anthropic-long-running-agent", "case-openai-agent-first-warehouse",
         "case-swe-agent-aci-experiment",
+        "concept-claude-code-agent", "concept-agent-loop",
     ],
     # rag: RAG 基础, 高级检索, Agentic RAG, 分块策略
     "rag": [
@@ -124,6 +128,7 @@ TOPIC_DOMAIN_MAP = {
     "topic-ai-classic-papers": "tools-ecosystem",
     "topic-ai-industry-applications": "industry-cases",
     "topic-harness-engineering-2026": "agent",
+    "topic-agent-architecture-2026": "agent",
 }
 
 # Build reverse map: page_name → domain

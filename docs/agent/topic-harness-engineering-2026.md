@@ -28,7 +28,7 @@ outline: deep
 | Harness Engineering 核心定义、五种分析单位、三层口径、四问法、厚度矩阵 | [Harness Engineering（harness 工程）](/agent/concept-harness-engineering) |
 | Agent 任务生命周期 8 阶段、6 大问题、6 大系统模块 | [Agent 任务生命周期](/agent/concept-agent-task-lifecycle) |
 | L0-L5 覆盖层次（从模型到组织） | [Harness 覆盖层次（L0–L5）](/agent/concept-harness-coverage-levels) |
-| 相关 Agent 概念 | [concept-agent-loop](/base-models/concept-agent-loop), [上下文工程（Context Engineering）](/agent/concept-context-engineering), [MCP 协议（已合并）](/base-models/concept-mcp-protocol), [智能体记忆管理（Agent Memory Management）](/agent/concept-agent-memory) |
+| 相关 Agent 概念 | [Agent Loop（智能体循环）](/agent/concept-agent-loop), [上下文工程（Context Engineering）](/agent/concept-context-engineering), [MCP 协议（已合并）](/base-models/concept-mcp-protocol), [智能体记忆管理（Agent Memory Management）](/agent/concept-agent-memory) |
 
 ### 三、3 大工程观察
 

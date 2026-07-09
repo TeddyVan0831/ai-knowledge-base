@@ -85,7 +85,7 @@ Harness 的"覆盖层次"是从模型到组织的 **6 层嵌套结构**（L0–L
 ## 关联
 
 - 相关概念: [Harness Engineering（harness 工程）](/agent/concept-harness-engineering), [Agent 任务生命周期](/agent/concept-agent-task-lifecycle)
-- 主题: [topic-agent-architecture-2026](/base-models/topic-agent-architecture-2026)
+- 主题: [2026 Agent 架构综述](/agent/topic-agent-architecture-2026)
 - 配套资料: 
 
 ## 引用来源

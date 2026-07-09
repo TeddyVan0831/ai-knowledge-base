@@ -65,7 +65,7 @@ Anthropic Engineering 2025-11-26 发表 *Effective harnesses for long-running ag
 ## 关联
 
 - 相关概念: [Harness Engineering（harness 工程）](/agent/concept-harness-engineering), [Agent 任务生命周期](/agent/concept-agent-task-lifecycle), [Harness 覆盖层次（L0–L5）](/agent/concept-harness-coverage-levels)
-- 主题: [topic-agent-architecture-2026](/base-models/topic-agent-architecture-2026)
+- 主题: [2026 Agent 架构综述](/agent/topic-agent-architecture-2026)
 - 配套资料: 
 - 相关案例: [SWE-agent ACI 接口实验案例](/agent/case-swe-agent-aci-experiment), [OpenAI Agent-first 仓库案例](/agent/case-openai-agent-first-warehouse)
 

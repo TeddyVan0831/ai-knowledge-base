@@ -68,7 +68,7 @@ Ryan Lopopolo / OpenAI Engineering 2026 论文 *Harness engineering: leveraging 
 ## 关联
 
 - 相关概念: [Harness Engineering（harness 工程）](/agent/concept-harness-engineering), [Harness 覆盖层次（L0–L5）](/agent/concept-harness-coverage-levels)
-- 主题: [topic-agent-architecture-2026](/base-models/topic-agent-architecture-2026)
+- 主题: [2026 Agent 架构综述](/agent/topic-agent-architecture-2026)
 - 配套资料: 
 - 相关案例: [Anthropic 长任务 Harness 案例（Opus 4.5）](/agent/case-anthropic-long-running-agent), [SWE-agent ACI 接口实验案例](/agent/case-swe-agent-aci-experiment)
 

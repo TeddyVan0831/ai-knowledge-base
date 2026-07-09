@@ -66,8 +66,8 @@ outline: deep
 
 ## 关联
 - 相关概念: [企业级 AI 部署：硬件选型与框架选择](/inference-deploy/concept-enterprise-ai-deployment)（企业级 AI 部署框架）
-- 相关概念: [concept-product-vllm](/base-models/concept-product-vllm)（vLLM 推理引擎，底层依赖 CUDA）
-- 相关概念: [concept-product-sglang](/base-models/concept-product-sglang)（SGLang 推理引擎，依赖 CUDA）
+- 相关概念: [vLLM](/inference-deploy/product-vllm)（vLLM 推理引擎，底层依赖 CUDA）
+- 相关概念: [SGLang](/inference-deploy/product-sglang)（SGLang 推理引擎，依赖 CUDA）
 - 参见: [NVIDIA H100 GPU](/base-models/model-h100)（H100 GPU 与 NVLink 4.0）
 
 ## 引用来源

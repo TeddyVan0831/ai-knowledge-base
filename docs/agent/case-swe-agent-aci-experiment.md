@@ -66,8 +66,8 @@ John Yang 等 NeurIPS 2024 论文 *SWE-agent: Agent-Computer Interfaces Enable A
 
 ## 关联
 
-- 相关概念: [Harness Engineering（harness 工程）](/agent/concept-harness-engineering), [concept-agent-loop](/base-models/concept-agent-loop)
-- 主题: [topic-agent-architecture-2026](/base-models/topic-agent-architecture-2026)
+- 相关概念: [Harness Engineering（harness 工程）](/agent/concept-harness-engineering), [Agent Loop（智能体循环）](/agent/concept-agent-loop)
+- 主题: [2026 Agent 架构综述](/agent/topic-agent-architecture-2026)
 - 配套资料: 
 - 相关案例: [Anthropic 长任务 Harness 案例（Opus 4.5）](/agent/case-anthropic-long-running-agent), [OpenAI Agent-first 仓库案例](/agent/case-openai-agent-first-warehouse)
 

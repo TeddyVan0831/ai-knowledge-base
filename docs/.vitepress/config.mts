@@ -42,6 +42,9 @@ export default defineConfig({
             { text: 'Embedding 模型选型', link: '/base-models/concept-embedding-model-selection' },
             { text: '范畴论与 LLM', link: '/base-models/concept-category-theory-llm' },
             { text: 'LLM Wiki', link: '/base-models/concept-llm-wiki' },
+            { text: 'DeepSeek V4', link: '/base-models/concept-deepseek-v4' },
+            { text: '华为昇腾 AI 生态', link: '/base-models/concept-ascend-ecosystem' },
+            { text: 'Atlas 超节点', link: '/base-models/concept-atlas-superpod' },
             // 硬件与公司
             { text: 'H100 GPU', link: '/base-models/model-h100' },
             { text: 'B200 GPU', link: '/base-models/model-b200' },
@@ -54,6 +57,7 @@ export default defineConfig({
             { text: 'Anthropic 公司', link: '/base-models/company-anthropic' },
             { text: 'Google 公司', link: '/base-models/company-google' },
             { text: 'Meta 公司', link: '/base-models/company-meta' },
+            { text: '华为公司', link: '/base-models/company-huawei' },
           ]
         }
       ],
@@ -75,6 +79,7 @@ export default defineConfig({
             { text: '显存计算', link: '/architecture/concept-vram-calculation' },
             { text: 'FP8 混合精度', link: '/architecture/concept-fp8-mixed-precision' },
             { text: '无损耗负载均衡', link: '/architecture/concept-loss-free-load-balancing' },
+            { text: 'CSA/HCA 注意力', link: '/architecture/concept-csa-hca-attention' },
           ]
         }
       ],
@@ -118,6 +123,7 @@ export default defineConfig({
             { text: '边缘推理全景', link: '/inference-deploy/topic-edge-inference' },
             { text: 'LLM 边缘推理综述', link: '/inference-deploy/concept-llm-edge-inference' },
             { text: '部署运维综述', link: '/inference-deploy/topic-ai-deployment-ops' },
+            { text: '国产算力部署实践', link: '/inference-deploy/concept-ascend-deployment' },
           ]
         }
       ],
@@ -165,6 +171,10 @@ export default defineConfig({
             { text: 'Anthropic 长任务案例', link: '/agent/case-anthropic-long-running-agent' },
             { text: 'SWE-agent 实验', link: '/agent/case-swe-agent-aci-experiment' },
             { text: 'OpenAI Agent-first 仓库', link: '/agent/case-openai-agent-first-warehouse' },
+            // 2026-07-09 Lint P0+P1 新增（补 domain 标签 + 新建缺失页）
+            { text: 'Claude Code Agent', link: '/agent/concept-claude-code-agent' },
+            { text: 'Agent Loop 循环', link: '/agent/concept-agent-loop' },
+            { text: '2026 Agent 架构综述', link: '/agent/topic-agent-architecture-2026' },
           ]
         }
       ],
