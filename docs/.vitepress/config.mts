@@ -58,6 +58,9 @@ export default defineConfig({
             { text: 'Google 公司', link: '/base-models/company-google' },
             { text: 'Meta 公司', link: '/base-models/company-meta' },
             { text: '华为公司', link: '/base-models/company-huawei' },
+            { text: '算力口径方法论', link: '/base-models/concept-ai-compute-caliber' },
+            { text: 'ARM CPU IP 谱系', link: '/base-models/concept-arm-cpu-ip-lineage' },
+            { text: 'LPDDR5 与 ECC', link: '/base-models/concept-lpddr-ecc' },
           ]
         }
       ],
@@ -124,6 +127,7 @@ export default defineConfig({
             { text: 'LLM 边缘推理综述', link: '/inference-deploy/concept-llm-edge-inference' },
             { text: '部署运维综述', link: '/inference-deploy/topic-ai-deployment-ops' },
             { text: '国产算力部署实践', link: '/inference-deploy/concept-ascend-deployment' },
+            { text: 'NVIDIA Jetson Orin/Thor', link: '/inference-deploy/concept-nvidia-jetson-orin-thor' },
           ]
         }
       ],
@@ -237,6 +241,7 @@ export default defineConfig({
             { text: 'ASML EUV 光刻', link: '/tools-ecosystem/concept-asml-euv-lithography' },
             { text: 'AI API 协议', link: '/tools-ecosystem/concept-ai-api-protocols' },
             { text: 'AI 经典论文', link: '/tools-ecosystem/topic-ai-classic-papers' },
+            { text: '半导体制程节点', link: '/tools-ecosystem/concept-semiconductor-process-node' },
           ]
         }
       ],

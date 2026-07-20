@@ -38,6 +38,7 @@ DOMAIN_MAP = {
         "company-google", "company-meta",
         "concept-deepseek-v4", "concept-ascend-ecosystem",
         "concept-atlas-superpod", "company-huawei",
+        "concept-ai-compute-caliber", "concept-arm-cpu-ip-lineage", "concept-lpddr-ecc",
     ],
     # architecture: MoE, 注意力优化, KV Cache, 解码加速
     "architecture": [
@@ -65,6 +66,7 @@ DOMAIN_MAP = {
         "product-vllm", "product-sglang", "product-langchain",
         "product-openclaw", "product-hermes", "product-faiss",
         "concept-llm-edge-inference", "concept-ascend-deployment",
+        "concept-nvidia-jetson-orin-thor",
     ],
     # agent: Agent 设计模式, 评估, MCP, AutoGLM, 安全
     "agent": [
@@ -114,6 +116,7 @@ DOMAIN_MAP = {
         "concept-cuda-parallel-computing", "concept-nvidia-software-ecosystem",
         "concept-nvidia-five-barriers", "concept-asml-euv-lithography",
         "concept-ai-api-protocols",
+        "concept-semiconductor-process-node",
     ],
 }
 
